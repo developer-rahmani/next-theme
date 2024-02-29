@@ -12,9 +12,9 @@ const ThemeSwitcher = () => {
   }, [theme]);
 
   return (
-    <div className="flex justify-center items-center h-[150px]">
+    <div className="flex justify-center items-center h-[100px]">
       <button
-        className="flex justify-center bg-gray-800 p-4 rounded-[4px]"
+        className="flex justify-center p-4 rounded-[4px] bg-btn text-color"
         onClick={handleChangeTheme}
       >
         Theme switcher

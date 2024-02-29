@@ -12,7 +12,9 @@ const Layout = ({ children }: ChildrenType) => {
     <ThemeContextWrapper>
       <ThemeSwitcher />
 
+      <div className="flex grow overflow-hidden">
       {children}
+      </div>
     </ThemeContextWrapper>
   );
 };
