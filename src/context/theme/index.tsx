@@ -22,19 +22,19 @@ const ThemeContextWrapper = ({ children }: ChildrenType) => {
   };
 
   // !! [Begin] Prevent storage editing => user can`t modify storage space
-  const handleChangeStorage = (event: StorageEvent) => {
-    if (event.oldValue) {
-      localStorage.setItem("theme", event.oldValue);
-    }
-  };
+  // const handleChangeStorage = (event: StorageEvent) => {
+  //   if (event.oldValue) {
+  //     localStorage.setItem("theme", event.oldValue);
+  //   }
+  // };
 
-  useEffect(() => {
-    window.addEventListener("storage", handleChangeStorage);
+  // useEffect(() => {
+  //   window.addEventListener("storage", handleChangeStorage);
 
-    return () => {
-      window.removeEventListener("storage", handleChangeStorage);
-    };
-  }, [theme]);
+  //   return () => {
+  //     window.removeEventListener("storage", handleChangeStorage);
+  //   };
+  // }, [theme]);
   // !! [End]
 
   // !! [Begin] Detect Theme And Set
